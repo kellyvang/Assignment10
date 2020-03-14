@@ -1,0 +1,32 @@
+body { text-align: center; } 
+table { margin-left:auto;
+        margin-right:auto;
+        margin-bottom:30px;
+    }         
+th {
+    width:7em;
+    border-bottom: 1px solid black;
+    text-align:left;
+    vertical-align: bottom;
+    padding-right:20px;
+}
+caption {
+    text-align: left;
+    border-bottom: 1px solid black;
+    width: 40%;
+    margin: 20px 0px;
+    font-size: 18px;
+}
+td {
+    padding-right: 20px;
+    text-align: left;
+}
+a { text-decoration: none;}
+
+.btn-symbol {
+    width:90px;
+    margin: 2px;
+}
+.symbols {
+    margin-top:20px;
+}

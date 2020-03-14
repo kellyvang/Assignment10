@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Company Stocks</h1>
+        <p class="lead">A pie chart graph of the value distribution of different stocks</p>
+        {% load static %}
+        <img src="{%  static 'images/pie.png' %}">    
+      </div>
+    </div>
+  </div>
+{% endblock content %}

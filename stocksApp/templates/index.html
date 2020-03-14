@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Company Stocks</h1>
+        <p class="lead">Stock and bond ownership for {{investor.name | title}}</p>
+        
+        <div class="symbols">
+        <h4>Pick a stock symbol</h4>
+        {% for stock in stocks %}
+            <a href="/stock/{{stock.stock_id}}"><button type="button" class="btn btn-outline-primary btn-symbol">{{stock.stock_symbol}}</button></a>
+        {% endfor %}
+        </div>
+
+        <div class="symbols">
+        <h4>Pick a bond symbol</h4>
+            <a href="/bond/{{bond.bond_id}}"><button type="button" class="btn btn-outline-primary btn-symbol">{{bond.bond_symbol}}</button></a>
+        </button>
+        <div>   
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
